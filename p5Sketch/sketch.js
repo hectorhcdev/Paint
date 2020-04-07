@@ -83,6 +83,10 @@ function draw() {
   rect(280,410,80,80);
   if(keys[0]){
     strokePencil++;
+    if(strokePencil>=25){
+      strokePencil=25;
+    }
+    
   }
   if(keys[1]){
     strokePencil--;
